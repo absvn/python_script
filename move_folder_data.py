@@ -4,7 +4,7 @@
 
 import os, glob, shutil
 folder = []
-os.chdir('/Users/abhinavsingh/Desktop/react/')
+os.chdir('/Users/absvn/Desktop/react/')
 for file in glob.glob('*'):
     folder.append(file)
 print(folder)
@@ -13,7 +13,7 @@ print(folder)
 # there are folder inside the main folder so we need to take those forlders inside the list to iterate over it
 
 in_folder = []
-os.chdir('/Users/abhinavsingh/Desktop/react/etc/main/')
+os.chdir('/Users/absvn/Desktop/react/etc/main/')
 for i in glob.glob('*'):
     in_folder.append(i)
 print(in_folder)
@@ -23,8 +23,8 @@ len(in_folder)
 
 for i in folder:
     for j in in_folder:
-        source = '/Users/abhinavsingh/Desktop/react/'+str(i)+'/main/'+str(j)+'/'
-        destination = '/Users/abhinavsingh/Desktop/image_data/'+str(j)+'/' 
+        source = '/Users/absvn/Desktop/react/'+str(i)+'/main/'+str(j)+'/'
+        destination = '/Users/absvn/Desktop/image_data/'+str(j)+'/' 
   
         files = os.listdir(source)
   
