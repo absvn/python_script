@@ -29,6 +29,9 @@ for i in folder:
         files = os.listdir(source)
   
         for f in files:
-            shutil.move(source + f, destination + f)
+            shutil.move(source + f, destination + i + f)
        
 # here image_data folder has many folder inside it so it will match the folder and shift the data to that particular folder
+
+# here (source + f, destination + i + f) if the source file exist inside the destination folder then it will add the folder 
+# name to it so that it can not be overridden
