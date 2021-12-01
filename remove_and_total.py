@@ -1,5 +1,5 @@
 for i in folder:
-    route = '/Users/abhinavsingh/Desktop/ipa_react/processed/'+str(i)+'/main/*'
+    route = '/Users/absvn/Desktop/ipa_react/processed/'+str(i)+'/main/*'
     total = 0
     for file in glob.glob(route):
         total += 1
